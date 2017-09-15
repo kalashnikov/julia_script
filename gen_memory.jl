@@ -109,9 +109,9 @@ for f in ARGS
     outf = open(outf_name, "w")
 
     # Header
-    print(outf, "Operation, At, ") 
+    print(outf, "Operation, At") 
     for i in range(1, length(hdbs))
-        print(outf, ",HDB $(i-1)")
+        print(outf, ", HDB $(i-1)")
     end
     println(outf)
 
